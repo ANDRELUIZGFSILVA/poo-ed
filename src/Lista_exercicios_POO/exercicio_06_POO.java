@@ -1,3 +1,4 @@
+package Lista_exercicios_POO;
 //importando biblioteca de entrada de dados.
 import java.util.Scanner;
 

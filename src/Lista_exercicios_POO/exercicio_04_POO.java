@@ -1,35 +1,36 @@
+package Lista_exercicios_POO;
 //importando biblioteca de entrada de dados.
 import java.util.Scanner;
 
-public class exercicio_05_POO {
+public class exercicio_04_POO {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		//declaracao de variaveis.
-		double A;
-		double B;
-		double MEDIA;
+		int a;
+		int b;
+		int PROD;
 		Scanner S = new Scanner(System.in);
 		
 		//incio do programa.
 		
 				//entrada de dados.
 				
-				System.out.println("insira a primeira nota: ");
-				A = S.nextDouble();
-				System.out.println("insira a segunda nota: ");
-			    B = S.nextDouble();
+				System.out.println("insira o primeiro valor: ");
+				a = S.nextInt();
+				System.out.println("insira o segundo valor: ");
+				b = S.nextInt();
 				
 				//processamento de dados.
 				
-				MEDIA = ( (A * 3.5) + (B * 7.5)) / 11.0;
+				PROD = a * b;
 				
 				//retorno dos dados.
 				
-				System.out.printf("MEDIA = %.5f%n", MEDIA);
+				System.out.println("PROD= " + PROD);
 				
-				//fim do programa.
+				//fim do programa
 	}
 
 }

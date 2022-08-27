@@ -1,15 +1,16 @@
+package Lista_exercicios_POO;
 //importando biblioteca de entrada de dados.
 import java.util.Scanner;
 
-public class exercicio_04_POO {
+public class exercicio_13_POO {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		//declaracao de variaveis.
-		int a;
-		int b;
-		int PROD;
+		int a , b , c;
+		int maior_ab;
+		int maior_abc;
 		Scanner S = new Scanner(System.in);
 		
 		//incio do programa.
@@ -20,16 +21,19 @@ public class exercicio_04_POO {
 				a = S.nextInt();
 				System.out.println("insira o segundo valor: ");
 				b = S.nextInt();
+				System.out.println("insira o terceiro valor: ");
+				c = S.nextInt();
 				
 				//processamento de dados.
 				
-				PROD = a * b;
+				maior_ab = (a + b + Math.abs(a - b)) / 2;
+				maior_abc = (maior_ab + c + Math.abs(maior_ab - c)) / 2;
 				
 				//retorno dos dados.
 				
-				System.out.println("PROD= " + PROD);
+				System.out.println(maior_abc + " eh o maior");
 				
-				//fim do programa
+				//fim do programa.
 	}
 
 }
